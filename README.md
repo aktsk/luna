@@ -1,15 +1,15 @@
 Luna
 ====
 
-Luna は Elixir のユーティリティモジュール集です。
+Utility library for Elixir.
 
 
-## インストール方法
+## Installation
 
-`mix.exs` の deps に追加します:
+Add Luna to `mix.exs` dependencies:
 
 ```
 def deps do
-  [{:luna, github: "aktsk/luna", ref: "master"}]
+  [{:luna, github: "aktsk/luna", ref: "develop"}]
 end
 ```
