@@ -11,10 +11,12 @@ defmodule Luna.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :poison]]
+    [applications: [:logger, :ex_json_schema, :phoenix, :poison]]
   end
 
   defp deps do
-    [{:poison, "~> 2.1"}]
+    [{:ex_json_schema, "~> 0.4"},
+     {:phoenix, "~> 1.1.4"},
+     {:poison, "~> 2.1"}]
   end
 end
