@@ -16,7 +16,8 @@ defmodule Luna.Plug.JsonSchema do
 
   def call(conn, _opts) do
     controller = controller_module(conn)
-    case Luna.JsonSchema.validate(controller, action_name(conn), conn.params) do
+    action = action_name(conn)
+    case Luna.JsonSchema.validate(controller, action, conn.params) do
       :ok ->
         conn
       {:error, reasons} when is_list(reasons) ->
