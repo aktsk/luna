@@ -7,7 +7,8 @@ defmodule Luna.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps,
+     package: package]
   end
 
   def application do
@@ -18,5 +19,12 @@ defmodule Luna.Mixfile do
     [{:ex_json_schema, "~> 0.4"},
      {:phoenix, "~> 1.2.0-rc"},
      {:poison, "~> 2.1"}]
+  end
+
+  defp package do
+    [maintainers: ["Seizan Shimazaki"],
+     licenses: ["MIT"],
+     links: %{github: "https://github.com/aktsk/luna"},
+     files: ~w(mix.exs README.md LICENSE lib)]
   end
 end
