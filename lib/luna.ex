@@ -2,8 +2,7 @@ defmodule Luna do
   use Application
 
   def start(_type, _args) do
-    import Supervisor.Spec, warn: false
-
+    import Supervisor.Spec
     children = [
       supervisor(Task.Supervisor, [[name: Luna.Slack.Supervisor]])
     ]
