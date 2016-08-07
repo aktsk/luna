@@ -4,9 +4,12 @@ defmodule Luna.Mixfile do
   def project do
     [app: :luna,
      version: "0.0.1",
-     elixir: "~> 1.2",
-     deps: deps,
-     package: package]
+     elixir: "~> 1.3",
+     deps: deps(),
+     build_embedded: Mix.env == :prod,
+     start_permanent: Mix.env == :prod,
+     description: "Utility library for Elixir.",
+     package: package()]
   end
 
   def application do

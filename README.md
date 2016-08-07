@@ -8,12 +8,6 @@ Utility library for Elixir.
 
 Add Luna to `mix.exs` dependencies:
 
-```
-def deps do
-  [{:luna, github: "aktsk/luna", ref: "develop"}]
-end
-```
-
 
 ## Luna.SiteMap
 
