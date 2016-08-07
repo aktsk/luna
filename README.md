@@ -1,6 +1,10 @@
 Luna
 ====
 
+[![Build Status](https://travis-ci.org/aktsk/luna.svg?branch=master)](https://travis-ci.org/aktsk/luna)
+[![Hex.pm version](https://img.shields.io/hexpm/v/luna.svg)](https://hex.pm/packages/luna)
+[![Hex.pm](https://img.shields.io/hexpm/l/luna.svg)](https://github.com/aktsk/luna/blob/master/LICENSE)
+
 Utility library for Elixir.
 
 
