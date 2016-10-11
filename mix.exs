@@ -17,7 +17,7 @@ defmodule Luna.Mixfile do
   end
 
   defp deps do
-    [{:ex_json_schema, "~> 0.4"},
+    [{:ex_json_schema, "~> 0.5"},
      {:phoenix, "~> 1.2"},
      {:poison, "~> 2.2"},
      {:xml_builder, "~> 0.0.8"}]
