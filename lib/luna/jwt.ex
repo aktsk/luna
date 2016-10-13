@@ -1,9 +1,6 @@
 defmodule Luna.JWT do
-  defp secret_key() do
-    # TODO(seizans): 必須 config を事前チェックする仕組みを入れる
-    Application.fetch_env!(:luna, __MODULE__)
-    |> Keyword.fetch!(:secret_key)
-  end
+  # TODO(seizans): 必須 config を事前チェックする仕組みを入れる
+  defp secret_key(), do: Luna.Config.fetch!(:luna, :secret_key)
 
   def encode(user_id, expire_in) do
     encode(user_id, expire_in, secret_key())
