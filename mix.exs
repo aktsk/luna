@@ -3,7 +3,7 @@ defmodule Luna.Mixfile do
 
   def project do
     [app: :luna,
-     version: "0.1.0",
+     version: "0.2.0",
      elixir: "~> 1.3",
      deps: deps(),
      build_embedded: Mix.env == :prod,
@@ -26,7 +26,7 @@ defmodule Luna.Mixfile do
   defp package do
     [maintainers: ["Seizan Shimazaki"],
      licenses: ["MIT"],
-     links: %{github: "https://github.com/aktsk/luna"},
+     links: %{"GitHub" => "https://github.com/aktsk/luna"},
      files: ~w(mix.exs README.md LICENSE lib)]
   end
 end
