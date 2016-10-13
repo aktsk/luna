@@ -3,7 +3,7 @@ defmodule Luna.Mixfile do
 
   def project do
     [app: :luna,
-     version: "0.2.0",
+     version: "0.3.0",
      elixir: "~> 1.3",
      deps: deps(),
      build_embedded: Mix.env == :prod,
