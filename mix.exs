@@ -20,7 +20,8 @@ defmodule Luna.Mixfile do
     [{:ex_json_schema, "~> 0.5"},
      {:phoenix, "~> 1.2"},
      {:poison, "~> 2.2"},
-     {:xml_builder, "~> 0.0.8"}]
+     {:xml_builder, "~> 0.0.8"},
+     {:credo, "~> 0.4.12", only: [:dev, :test]}]
   end
 
   defp package do

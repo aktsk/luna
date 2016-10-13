@@ -1,4 +1,6 @@
-%{"ex_json_schema": {:hex, :ex_json_schema, "0.5.1", "83356e5a673d6fbe75da612a44b8f84942711630414d8be5e342f3597b03939a", [:mix], []},
+%{"bunt": {:hex, :bunt, "0.1.6", "5d95a6882f73f3b9969fdfd1953798046664e6f77ec4e486e6fafc7caad97c6f", [:mix], []},
+  "credo": {:hex, :credo, "0.4.12", "f5e1973405ea25c6e64959fb0b6bf92950147a0278cc2a002a491b45f78f7b87", [:mix], [{:bunt, "~> 0.1.6", [hex: :bunt, optional: false]}]},
+  "ex_json_schema": {:hex, :ex_json_schema, "0.5.1", "83356e5a673d6fbe75da612a44b8f84942711630414d8be5e342f3597b03939a", [:mix], []},
   "mime": {:hex, :mime, "1.0.1", "05c393850524767d13a53627df71beeebb016205eb43bfbd92d14d24ec7a1b51", [:mix], []},
   "phoenix": {:hex, :phoenix, "1.2.1", "6dc592249ab73c67575769765b66ad164ad25d83defa3492dc6ae269bd2a68ab", [:mix], [{:cowboy, "~> 1.0", [hex: :cowboy, optional: true]}, {:phoenix_pubsub, "~> 1.0", [hex: :phoenix_pubsub, optional: false]}, {:plug, "~> 1.1", [hex: :plug, optional: false]}, {:poison, "~> 1.5 or ~> 2.0", [hex: :poison, optional: false]}]},
   "phoenix_pubsub": {:hex, :phoenix_pubsub, "1.0.1", "c10ddf6237007c804bf2b8f3c4d5b99009b42eca3a0dfac04ea2d8001186056a", [:mix], []},

@@ -1,9 +1,9 @@
 defmodule Luna.JWT do
   # TODO(seizans): 必須 config を事前チェックする仕組みを入れる
-  defp secret_key(), do: Luna.Config.fetch!(:luna, :secret_key)
+  defp fetch_secret_key!(), do: Luna.Config.fetch!(:luna, :secret_key)
 
   def encode(user_id, expire_in) do
-    encode(user_id, expire_in, secret_key())
+    encode(user_id, expire_in, fetch_secret_key!())
   end
 
   def encode(user_id, expire_in, secret_key) do
@@ -29,7 +29,7 @@ defmodule Luna.JWT do
   end
 
   def decode(jwt) do
-    decode(jwt, secret_key())
+    decode(jwt, fetch_secret_key!())
   end
 
   def decode(jwt, secret_key) do

@@ -9,5 +9,10 @@ matrix:
 
 sudo: false
 
+script:
+  - MIX_ENV=test mix compile --warnings-as-errors
+  - MIX_ENV=test mix credo
+  - mix test
+
 notifications:
   email: false
